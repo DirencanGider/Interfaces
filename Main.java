@@ -44,13 +44,24 @@ public class Main {
 
         PcMuhendisi muhendis1 = new PcMuhendisi(false,false); // askerlik yapmadık (false), adli sicil kaydı yok (false) //  11
 
-        muhendis1.askerlik_durumu_sorgula(); //  12
+        /*muhendis1.askerlik_durumu_sorgula(); //  12
         muhendis1.adli_sicil_sorgula(); //  13
 
         System.out.println(muhendis1.mezuniyet_ortalamasi(3.07)); //  14
 
-        String[] tecrube = {"Vestel", "Havelsan", "Türksat"}; // 15
-         muhendis1.is_tecrubesi(tecrube); //  16
+        String[] tecrube = {"Vestel", "Havelsan", "Türksat"}; //  15
+        muhendis1.is_tecrubesi(tecrube); //  16 */ //MakineMuhendisi class'ındakileri deneyeceğimiz için bunları yoruma aldık. //  28
+
+        MakineMuhendisi muhendis2 = new MakineMuhendisi(true,false); //  29
+
+        String[] tecrube = {}; // Array'in içi boş olduğu için çıktısında "Herhangi bir iş tecrübem bulunmuyor..." yazdı. //   29
+        String[] referans = {"Direncan Gider", "Özgür Demir"};
+        muhendis2.adli_sicil_sorgula();
+        muhendis2.askerlik_durumu_sorgula();
+        System.out.println(muhendis2.mezuniyet_ortalamasi(2.31));
+        muhendis2.is_tecrubesi(tecrube);
+        muhendis2.referans_getir(referans);
+        muhendis2.calis();  // Dersin en sonunda bu metodu da çağırmış olduk.  //   33
 
     }
 
